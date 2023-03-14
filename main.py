@@ -51,10 +51,11 @@ def search_pokemon(pokemon_id):
 def main():
     """Run Termdex app"""
     print("Welcome to TermDex")
-    print("Input a pokemon ID")
-    pokemon_id = input()
-    pokemon_id = int(pokemon_id)
-    search_pokemon(pokemon_id)
+    while True:
+        print("Input a pokemon ID")
+        pokemon_id = input()
+        pokemon_id = int(pokemon_id)
+        search_pokemon(pokemon_id)
 
 
 if __name__ == "__main__":
